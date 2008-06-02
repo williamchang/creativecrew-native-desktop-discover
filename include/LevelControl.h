@@ -47,7 +47,7 @@ public:
             dotStaticGeometry->build();
             glbObject->renderSceneMgr->destroySceneNode(dotSceneNode->getName());
             */
-        } catch(Ogre::Exception& e) { 
+        } catch(Ogre::Exception& e) {
             Ogre::LogManager::getSingleton().logMessage(Ogre::String("Unable to parse level: ") + e.getFullDescription());
         } 
     }
