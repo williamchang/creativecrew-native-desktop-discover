@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "discover", "discover_vc9.vcproj", "{94BC8A35-EE2A-498D-B9F7-97C6DCC5BE18}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreBulletCollisions", "..\vendors\bullet\Collisions\scripts\VC8\OgreBulletCollisions_SDK.vcproj", "{791F594F-FF44-49D1-A882-FF4DB0DCD92A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OgreBulletDynamics", "..\vendors\bullet\Dynamics\scripts\VC8\OgreBulletDynamics_SDK.vcproj", "{022634CE-F06A-4F71-AA07-3CE7BB1841AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94BC8A35-EE2A-498D-B9F7-97C6DCC5BE18}.Debug|Win32.ActiveCfg = Debug|Win32
+		{94BC8A35-EE2A-498D-B9F7-97C6DCC5BE18}.Debug|Win32.Build.0 = Debug|Win32
+		{94BC8A35-EE2A-498D-B9F7-97C6DCC5BE18}.Release|Win32.ActiveCfg = Release|Win32
+		{94BC8A35-EE2A-498D-B9F7-97C6DCC5BE18}.Release|Win32.Build.0 = Release|Win32
+		{791F594F-FF44-49D1-A882-FF4DB0DCD92A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{791F594F-FF44-49D1-A882-FF4DB0DCD92A}.Release|Win32.ActiveCfg = Release|Win32
+		{791F594F-FF44-49D1-A882-FF4DB0DCD92A}.Release|Win32.Build.0 = Release|Win32
+		{022634CE-F06A-4F71-AA07-3CE7BB1841AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{022634CE-F06A-4F71-AA07-3CE7BB1841AE}.Release|Win32.ActiveCfg = Release|Win32
+		{022634CE-F06A-4F71-AA07-3CE7BB1841AE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
