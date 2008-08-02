@@ -227,7 +227,7 @@ OgreBulletDynamics::RigidBody* DebugListener::getPhysicsBody(Ogre::Ray r) {
     btVector3 btRayTo = OgreBulletCollisions::OgreBtConverter::to(r.getPoint(10000));
     btCollisionWorld::ClosestRayResultCallback mClosestRayResultCallback(btRayFrom, btRayTo);
     glbObject->physicsWorld->getBulletCollisionWorld()->rayTest(btRayFrom, btRayTo, mClosestRayResultCallback);
-    if(mClosestRayResultCallback.HasHit()) {
+    if(mClosestRayResultCallback.hasHit()) {
         OgreBulletDynamics::RigidBody* b = static_cast<OgreBulletDynamics::RigidBody*>(glbObject->physicsWorld->findObject(mClosestRayResultCallback.m_collisionObject));
         mHitPoint = OgreBulletCollisions::BtOgreConverter::to(mClosestRayResultCallback.m_hitPointWorld);
         mDebugText1 = "Hit: " + Ogre::StringConverter::toString(mHitPoint);
