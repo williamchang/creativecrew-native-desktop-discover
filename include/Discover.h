@@ -43,25 +43,25 @@
 @section intro_sec Introduction
     Based on C++ object-oriented programming (OPP). A game engine framework that
     integrates Ogre (Object-Oriented Graphics Rendering Engine) and
-    NxOgre (Ageia Physx Physics Engine).
+    OgreBullet (Bullet Collision Detection and Physics).
 
-    - Developers Club: http://www.developersclub.org/
-    - SourceForge.net: http://sourceforge.net/projects/developersclub/
+    - Creative Crew: http://www.creativecrew.org/
+    - Google Code: http://creativecrew.googlecode.com/
     - Ogre: http://www.ogre3d.org/
-    - NxOgre: http://www.nxogre.org/
-    - Ageia: http://www.ageia.com/
+    - OgreBullet: http://www.ogre3d.org/phpBB2addons/viewforum.php?f=12
+    - Bullet Collision Detection and Physics: http://www.bulletphysics.com/
     .
 @section new Features:
 
     <strong>Fundamental Features:</strong>
-        - Updated and integrated code-base to OGRE 1.4.0 [Eihort]. <strong>[DONE]</strong>
+        - Updated and integrated code-base to OGRE 1.4.9 [Eihort]. <strong>[DONE]</strong>
         - Rewritten base class. <strong>[DONE]</strong>
         - Working narration module (basic slide show). <strong>[DONE]</strong>
             - Can play based on time and events. <strong>[DONE]</strong>
             - Display slides based on popular image formats (ex: jpg, gif, png, bmp). <strong>[DONE]</strong>
             - Can display caption with or without slides. <strong>[DONE]</strong>
             .
-        - Integrated OgreNewt, the physics module (Newton engine) into code-base (solution). <strong>[DONE]</strong>
+        - Integrated OgreBullet, the physics (Bullet) into code-base (solution). <strong>[DONE]</strong>
         - Loading world (scene). <strong>[DONE]</strong>
         - Apply collision to world (scene). <strong>[DONE]</strong>
         - Object-oriented ready (character.h class). <strong>[DONE]</strong>
@@ -82,12 +82,12 @@
         - Redesign 2D concept level (using Autodesk Maya for level designing) with better presentation and better test cases.
         .
     @section install Installation
-        Coming soon.
+        TODO
     @section compiling Compiling
-        Coming soon.
+        TODO
     @section license License
         
-        <strong>Developers Club</strong>
+        <strong>Creative Crew</strong>
 
         "Discover Engine" is licensed under the <a target="_blank" href="http://www.gnu.org/copyleft/lgpl.html">GNU Lesser Public License (LGPL)</a>.
 
