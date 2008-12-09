@@ -150,12 +150,12 @@ public:
         mLoadingDescriptionElement->setCaption("Parsing scripts...");
         mWindow->update();
     }
-    void scriptParseStarted(const Ogre::String& scriptName)
+    void scriptParseStarted(const Ogre::String& scriptName, bool &skipThisScript)
     {
         mLoadingCommentElement->setCaption(scriptName);
         mWindow->update();
     }
-    void scriptParseEnded(const Ogre::String& scriptName)
+    void scriptParseEnded(const Ogre::String& scriptName, bool skipped)
     {
         mLoadingBarElement->setWidth(
             mLoadingBarElement->getWidth() + mProgressBarInc);
@@ -195,7 +195,15 @@ public:
     void resourceGroupLoadEnded(const Ogre::String& groupName)
     {
     }
+    Ogre::DataStreamPtr resourceLoading(const Ogre::String &name, const Ogre::String &group, Ogre::Resource *resource)
+    {
+        return Ogre::DataStreamPtr();
+    }
 
+    bool resourceCollision(Ogre::ResourcePtr &resource, Ogre::ResourceManager *resourceManager)
+    {
+        return false;
+    }
 };
 
 } // END namespace Discover

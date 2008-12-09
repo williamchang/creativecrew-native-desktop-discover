@@ -249,7 +249,7 @@ Ogre::Entity* DebugListener::getEntity(Ogre::Ray r) {
             Ogre::Vector3* vertices;
             unsigned long* indices;
             Ogre::Entity* pentity = static_cast<Ogre::Entity*>(itr->movable);
-            Utilities::getMeshInformation(pentity->getMesh(), vertex_count, vertices, index_count, indices, pentity->getParentNode()->getWorldPosition(), pentity->getParentNode()->getWorldOrientation(), pentity->getParentNode()->getScale());
+            Utilities::getMeshInformation(pentity->getMesh(), vertex_count, vertices, index_count, indices, pentity->getParentNode()->_getDerivedPosition(), pentity->getParentNode()->_getDerivedOrientation(), pentity->getParentNode()->getScale());
             // Iterate through all the vertices for intersection
             for(int i = 0;i < static_cast<int>(index_count);i += 3) {
                 std::pair<bool, float> hit = Ogre::Math::intersects(Ogre::Ray(r), vertices[i], vertices[i+1], vertices[i+2], true, false);

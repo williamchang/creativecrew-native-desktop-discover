@@ -137,7 +137,6 @@ float ObjectManager::getRestitution(ObjectManager::MaterialCommon physical) {
 void ObjectManager::setMaterialByName(const Ogre::String& name, const Ogre::String& materialname, MaterialCommon physical) {
     Ogre::Entity* ent = renderSceneMgr->getEntity(name);
     ent->setMaterialName(materialname);
-    ent->setNormaliseNormals(true);
 }
 //---------------------------------------------------------------------
 Ogre::String ObjectManager::toString(ObjectManager::MaterialCommon physical) {

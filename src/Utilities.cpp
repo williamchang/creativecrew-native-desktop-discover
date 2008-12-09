@@ -64,7 +64,7 @@ bool Utilities::castRayFromPoint(const Ogre::Vector3& point, const Ogre::Vector3
             unsigned long *indices;
 
             // get the mesh information
-            getMeshInformation(pentity->getMesh(), vertex_count, vertices, index_count, indices, pentity->getParentNode()->getWorldPosition(), pentity->getParentNode()->getWorldOrientation(), pentity->getParentNode()->getScale());
+            getMeshInformation(pentity->getMesh(), vertex_count, vertices, index_count, indices, pentity->getParentNode()->_getDerivedPosition(), pentity->getParentNode()->_getDerivedOrientation(), pentity->getParentNode()->getScale());
 
             // test for hitting individual triangles on the mesh
             bool new_closest_found = false;
